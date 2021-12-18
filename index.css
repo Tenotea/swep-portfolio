@@ -4,9 +4,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 11px;
-  font-family: 'Aeonik';
+  font-family: 'Archivo', sans-serif;
   text-decoration: none;
   outline: none;
+  color: inherit;
 }
 
 @media screen and (min-width: 700px) {
@@ -63,35 +64,52 @@
   color: #6d6d6d;
 }
 
-.content-box .next-group-button {
-  border: none;
-  border-radius: 0.5rem;
-  padding: 1rem 2.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  max-width: 240px;
-  margin: 3rem auto 0 auto;
-  color: white;
-  font-size: 1.1rem;
-  background-color: #6205cc;
-  cursor: pointer;
-  position: relative;
+.content-box .other-group-links {
+  margin-top: 4rem;
 }
 
-.content-box .next-group-button .arrow {
-  position: absolute;
-  right: 1.4rem;
-  top: 1.5rem;
+.content-box .other-group-links .page-heading {
+  font-size: 1.2rem;
+  color: #494949;
+  font-weight: 400;
+}
+
+.content-box .other-group-links .groups-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 290px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 290px));
+  grid-gap: 1.2rem;
+  gap: 1.2rem;
+  margin: 1rem auto auto auto;
+}
+
+.content-box .other-group-links .groups-container .group {
+  border: 2px solid #c2c2c2;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  -webkit-transition: ease-out transform 200ms;
+  transition: ease-out transform 200ms;
+}
+
+.content-box .other-group-links .groups-container .group:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.content-box .other-group-links .groups-container .group .group-name {
+  font-size: 1.4em;
+  color: #1b0d2b;
+  margin-top: 0.5em;
+}
+
+.content-box .other-group-links .groups-container .group a {
+  margin-top: 1em;
   display: block;
-  font-size: 1.5rem;
-  line-height: 0;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-left: auto;
+  color: #6205cc;
 }
 /*# sourceMappingURL=index.css.map */
